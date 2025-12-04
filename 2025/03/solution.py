@@ -1,7 +1,4 @@
 
-INPUT = 'real.input'
-
-
 def p4(L, M):
   DM = {d:[] for d in range(10)}
   for I,D in enumerate(L):
@@ -20,8 +17,8 @@ def p4(L, M):
         DM[d].pop(0)
   return int(''.join(str(d) for d in R))
 
-
-with open(INPUT, 'r') as f:
+import sys
+with open(sys.INPUTFILE, 'r') as f:
   sum = 0
   for x in f.readlines():
     sum += p4(x.strip(), 12)

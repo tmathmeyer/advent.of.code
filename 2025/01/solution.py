@@ -1,8 +1,7 @@
-
-F = 'real.input'
+import sys
 D = 50
 C = 0
-with open(F) as f:
+with open(sys.INPUTFILE) as f:
   for l in f.readlines():
     V = (-1 if l[0]=='L' else 1) * int(l[1:])
     if V > 0:

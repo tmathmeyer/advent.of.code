@@ -55,5 +55,5 @@ def rl(f, fn):
         sum += s
   return sum
 
-#print(rl('real.input', nsn1))
-print(rl('real.input', nsn2))
+import sys
+print(rl(sys.INPUTFILE, nsn2))
